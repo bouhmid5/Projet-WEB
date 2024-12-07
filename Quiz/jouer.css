@@ -1,0 +1,135 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.card-container .choice-container {
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  border: 2px solid rgba(86, 165, 235, 0.3);
+  border-radius: 8px;
+  background-color: white;
+  width: calc(100% - 40px);
+  max-width: 500px;
+  transition: box-shadow 200ms ease, transform 200ms ease;
+}
+
+.card-container .choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(86, 158, 235, 0.4);
+  transform: translateY(-5px);
+}
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  background-color: #1e90ff;
+  color: #ffffff;
+}
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#game {
+  width: 150%;
+  max-width: 900px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hud-item {
+  text-align: center;
+}
+
+.hud-prefix {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.hud-main-text {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #1e90ff;
+}
+
+#progressBar {
+  width: 100%;
+  max-width: 500px;
+  height: 25px;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#progressBarFull {
+  height: 100%;
+  background-color: #1e90ff;
+  width: 0%;
+  transition: width 300ms ease;
+}
+
+#question {
+  font-size: 1.6rem;
+  color: #333;
+  text-align: center;
+}
+
+.choice-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(86, 165, 235, 0.25);
+  border-radius: 5px;
+  background-color: white;
+  padding: 15px;
+  font-size: 1.4rem;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(86, 158, 235, 0.3);
+  transform: translateY(-3px);
+}
+
+.card-container .choice-prefix {
+  padding: 15px;
+  background-color: #1e90ff;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px 0 0 8px;
+  flex-shrink: 0;
+}
+
+.card-container .choice-text {
+  padding: 15px;
+  flex: 1;
+  font-size: 1.2rem;
+  color: #333;
+}
