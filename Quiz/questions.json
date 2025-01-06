@@ -1,0 +1,82 @@
+[
+    {
+        "question": "Qui a remporté la Coupe du Monde de la FIFA 2018 ?",
+        "choice1": "Brésil",
+        "choice2": "France",
+        "choice3": "Allemagne",
+        "choice4": "Argentine",
+        "answer": 2
+    },
+    {
+        "question": "Quel joueur détient le record du plus grand nombre de Ballons d'Or ?",
+        "choice1": "Cristiano Ronaldo",
+        "choice2": "Lionel Messi",
+        "choice3": "Zinedine Zidane",
+        "choice4": "Michel Platini",
+        "answer": 2
+    },
+    {
+        "question": "Quel club a remporté le plus de Ligue des Champions de l'UEFA ?",
+        "choice1": "AC Milan",
+        "choice2": "Liverpool",
+        "choice3": "Real Madrid",
+        "choice4": "Bayern Munich",
+        "answer": 3
+    },
+    {
+        "question": "Quel joueur est surnommé 'El Pibe de Oro' ?",
+        "choice1": "Diego Maradona",
+        "choice2": "Pelé",
+        "choice3": "Ronaldinho",
+        "choice4": "Romário",
+        "answer": 1
+    },
+    {
+        "question": "Quel pays a été le premier à organiser une Coupe du Monde de la FIFA ?",
+        "choice1": "Italie",
+        "choice2": "Uruguay",
+        "choice3": "Argentine",
+        "choice4": "Brésil",
+        "answer": 2
+    },
+   {
+        "question": "Qui est le meilleur buteur de l'histoire de la Ligue des Champions de l'UEFA ?",
+        "choice1": "Lionel Messi",
+        "choice2": "Robert Lewandowski",
+        "choice3": "Cristiano Ronaldo",
+        "choice4": "Karim Benzema",
+        "answer": 3
+    },
+    {
+        "question": "Quel pays a remporté la première Coupe du Monde de la FIFA en 1930 ?",
+        "choice1": "Brésil",
+        "choice2": "Argentine",
+        "choice3": "Uruguay",
+        "choice4": "Italie",
+        "answer": 3
+    },
+   {
+        "question": "Quel stade est surnommé 'La Bombonera' ?",
+        "choice1": "Camp Nou",
+        "choice2": "Maracanã",
+        "choice3": "Stade de Wembley",
+        "choice4": "Stade de Boca Juniors",
+        "answer": 4
+    },
+    {
+        "question": "Quel joueur est connu pour son célèbre coup franc contre la France en 1997 ?",
+        "choice1": "Zinedine Zidane",
+        "choice2": "David Beckham",
+        "choice3": "Roberto Carlos",
+        "choice4": "Ronaldinho",
+        "answer": 3
+    },
+        {
+        "question": "Qui a remporté le Soulier d'Or (meilleur buteur) lors de la Coupe du Monde 2014 ?",
+        "choice1": "Lionel Messi",
+        "choice2": "Neymar",
+        "choice3": "Thomas Müller",
+        "choice4": "James Rodríguez",
+        "answer": 4
+    }
+]
