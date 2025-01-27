@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Langues - Makni Ahmed</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f9f9fc;
+        color: #333;
+        padding: 12px;
+        margin: 0;
+      }
+
+      h2 {
+        color: #1a77d2;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 15px;
+        font-size: 0.9em;
+        font-weight: bold;
+      }
+
+      .progress-container {
+        width: 80%;
+        background-color: #eef2f6;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        margin-top: 5px;
+      }
+
+      .progress-bar {
+        height: 20px;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 20px;
+        color: white;
+        font-weight: bold;
+        width: 0;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+      }
+
+      .francais {
+        background-color: #4caf50;
+        animation-name: grow-francais;
+      }
+      .anglais {
+        background-color: #2196f3;
+        animation-name: grow-anglais;
+      }
+      .arabe {
+        background-color: #ffc107;
+        animation-name: grow-arabe;
+      }
+
+      @keyframes grow-francais {
+        from {
+          width: 0;
+        }
+        to {
+          width: 80%;
+        }
+      }
+      @keyframes grow-anglais {
+        from {
+          width: 0;
+        }
+        to {
+          width: 40%;
+        }
+      }
+      @keyframes grow-arabe {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Langues :</h2>
+    <ul>
+      <li>
+        Français - Courant
+        <div class="progress-container">
+          <div class="progress-bar francais">80%</div>
+        </div>
+      </li>
+      <li>
+        Anglais - Intermédiaire
+        <div class="progress-container">
+          <div class="progress-bar anglais">40%</div>
+        </div>
+      </li>
+      <li>
+        Arabe - Natif
+        <div class="progress-container">
+          <div class="progress-bar arabe">100%</div>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>

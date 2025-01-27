@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire d'Évaluation</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f9f9fc;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h2 {
+        color: #1a77d2;
+      }
+
+      form {
+        padding: 20px;
+        max-width: 100%;
+        transition: all 0.3s ease;
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .form-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .form-group .field {
+        width: 48%;
+        margin-bottom: 20px;
+      }
+
+      label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        height: 35px;
+        background-color: #eef2f6;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        transition: border-color 0.3s ease;
+        box-sizing: border-box;
+      }
+
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      select:focus,
+      textarea:focus {
+        border-color: #6c6aa6;
+        outline: none;
+        box-shadow: 0 0 5px rgba(108, 106, 166, 0.5);
+      }
+
+      .error-message {
+        color: #dc3545;
+        font-size: 0.9em;
+      }
+
+      button {
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: none;
+        background-color: #6c6aa6;
+        color: #fff;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      button:hover {
+        background-color: #5a5591;
+        transform: scale(1.05);
+      }
+
+      button:active {
+        background-color: #4e497e;
+      }
+
+      .buttons {
+        height: 30px;
+        text-align: right;
+        margin-top: 1px;
+        font-size: 14px;
+      }
+
+      .reset-btn {
+        background-color: #dc3545;
+      }
+
+      .reset-btn:hover {
+        background-color: #b52a36;
+      }
+
+      .reset-btn:active {
+        background-color: #a1232e;
+      }
+
+      .form-group .full-width {
+        width: 100%;
+      }
+
+      @media (max-width: 768px) {
+        .form-group .field {
+          width: 100%;
+        }
+
+        button {
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Formulaire d'Évaluation :</h2>
+    <form id="evaluationForm" novalidate>
+      <div class="form-group">
+        <div class="field">
+          <label for="name">Entrez votre nom:</label>
+          <input
+            placeholder="Nom :"
+            type="text"
+            id="name"
+            name="name"
+            required
+          />
+          <div class="error-message" id="nameError"></div>
+        </div>
+        <div class="field">
+          <label for="email">Entrez votre email:</label>
+          <input
+            placeholder="Email :"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+          <div class="error-message" id="emailError"></div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="field">
+          <label for="html">Évaluez mes compétences en HTML/CSS :</label>
+          <select id="html" name="html" required>
+            <option value="">Sélectionnez</option>
+            <option value="1">1 - Débutant</option>
+            <option value="2">2 - Intermédiaire</option>
+            <option value="3">3 - Avancé</option>
+            <option value="4">4 - Expert</option>
+          </select>
+          <div class="error-message" id="htmlError"></div>
+        </div>
+        <div class="field">
+          <label for="js">Évaluez mes compétences en JavaScript :</label>
+          <select id="js" name="js" required>
+            <option value="">Sélectionnez</option>
+            <option value="1">1 - Débutant</option>
+            <option value="2">2 - Intermédiaire</option>
+            <option value="3">3 - Avancé</option>
+            <option value="4">4 - Expert</option>
+          </select>
+          <div class="error-message" id="jsError"></div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="full-width">
+          <label for="comment">Commentaires supplémentaires :</label>
+          <textarea
+            id="comment"
+            placeholder="Comment :"
+            name="comment"
+            rows="4"
+            cols="50"
+            style="height: 80px"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button type="reset" class="reset-btn">Réinitialiser</button>
+        <button type="submit">Envoyer</button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Éducation - Makni Ahmed</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 12px;
+        background-color: #f9f9fc;
+        color: #333;
+      }
+
+      h2 {
+        color: #1a77d2;
+        position: relative;
+        margin-bottom: 20px;
+      }
+
+      .card {
+        background-color: #eef2f6;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 10px;
+        flex: 1 1 calc(30% - 20px);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.5s forwards;
+      }
+
+      .card.full-width {
+        flex: 1 1 100%;
+        margin: 10px 10px;
+        padding: 20px;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        background-color: #e9ecef;
+      }
+
+      .experience-title {
+        color: #090911;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .table-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: -10px;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .card:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .card:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .card:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Éducation :</h2>
+
+    <div class="table-container">
+      <div class="card">
+        <div class="experience-title">
+          Baccalauréat Mathématiques<br /><span style="font-weight: normal">Mention Assez Bien</span>
+        </div>
+        <div>Lycée 15 Novembre, Route El Ain, Sfax</div>
+        <div>Juin 2021</div>
+      </div>
+      <div class="card">
+        <div class="experience-title">
+          Licence en sciences de l'informatique<br/><span style="font-weight: normal">Spécialité : Analyse des données et big data</span>
+        </div>
+        <div>Institut Supérieur d'informatique et de multimédia, Sfax</div>
+        <div>Septembre 2021 jusqu'à Mai 2024</div>
+      </div>
+      <div class="card full-width">
+        <div class="experience-title">
+          Ingénierie (Génie informatique)<br/>
+        </div>
+        <div>Institut International Technologie, Sfax</div>
+        <div>Depuis octobre 2024</div>
+      </div>
+    </div>
+  </body>
+</html>
