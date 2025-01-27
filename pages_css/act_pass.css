@@ -1,0 +1,60 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9fc;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+
+  h2 {
+    color: #1a77d2;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    background-color: #eef2f6;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+  }
+
+  li:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  li:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  li:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  .hobby-line {
+    width: 100%;
+    height: 1px;
+    background-color: #eef2f6;
+    margin: 10px 0;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hobby-icon {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #1a77d2;
+  }

@@ -1,0 +1,64 @@
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 12px;
+  background-color: #f9f9fc;
+  color: #333;
+}
+
+h2 {
+  color: #1a77d2;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #eef2f6;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 calc(30% - 20px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+.card.full-width {
+  flex: 1 1 100%;
+  margin: 10px 10px;
+  padding: 20px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: #e9ecef;
+}
+
+.experience-title {
+  color: #6c6aa6;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.table-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: -10px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
